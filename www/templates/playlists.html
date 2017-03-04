@@ -1,0 +1,23 @@
+<ion-view>
+  <ion-nav-title>
+    <img class="button button-clear" src="img/listRest/btnSerch.png" style="padding: 1% 0% 1% 0%; float: right;" ng-click="buscador()">
+<center>
+  <img class="button button-clear" src="img/Logo.png" ng-click="toSomos()">
+</center>
+</ion-nav-title>
+<ion-content>
+  <div class="button-bar">
+    <a class="button" style="padding: " id="negro">Preguntas</a>
+<a class="button" id="negro">Presupuestos</a>
+</div>
+<button class="button button-block button-positive" id="naranja" style="color:white"> Ofrece un servicio</button>
+<ion-list>
+  <div ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+    <a class="item  item-avatar" href="#">
+           <img style="float: left" src="img/escoba.png">
+<h2> {{playlist.title}}</h2>
+</a>
+</div>
+</ion-list>
+</ion-content>
+</ion-view>
